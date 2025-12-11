@@ -4,3 +4,6 @@ typings/
 
 .vscode/
 
+*__pycache__
+*test
+*test_templates
