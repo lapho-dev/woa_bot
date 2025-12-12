@@ -4,7 +4,6 @@ from numpy.typing import NDArray
 import cv2
 
 
-
 class RecognitionError(Exception):
     pass
 

@@ -13,6 +13,8 @@ from . import preprocessing, recognition
 class ExtractionError(Exception):
     pass
 
+
+
 def classify_is_ramp_agent_toggle_switch_on(cv_img: NDArray[np.uint8]) -> bool:
     """
     Classify a toggle switch image as 'on' (green) or 'off' (grey).
@@ -68,3 +70,5 @@ def extract_filter_column_img_and_icon_ctr_coor(cv_img:NDArray[np.uint8]) -> Tup
         return filter_column_icon_crop_img_list, icon_ctr_coordinates_list
     except Exception as e:
         raise ExtractionError("Error occured when extracting filter icons' images and their center coordinates in filter column,") from e
+    
+
